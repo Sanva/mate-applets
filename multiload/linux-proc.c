@@ -123,6 +123,7 @@ GetDiskLoad (int Maximum, int data [3], LoadGraph *g)
 
 		if (strcmp(mountentries[i].type, "smbfs") == 0
 		    || strcmp(mountentries[i].type, "nfs") == 0
+		    || strcmp(mountentries[i].type, "nsfs") == 0
 		    || strcmp(mountentries[i].type, "cifs") == 0)
 			continue;
 
